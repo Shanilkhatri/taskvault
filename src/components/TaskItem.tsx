@@ -9,6 +9,7 @@ export default function TaskItem({ task }: { task: Task }) {
   return (
     <div className="flex items-center justify-between px-4 py-2 bg-gray-800 rounded">
       <div
+        
         onClick={() => toggle(task.id)}
         className={`cursor-pointer ${task.completed ? "line-through text-gray-400" : ""}`}
       >
