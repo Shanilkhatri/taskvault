@@ -1,12 +1,12 @@
-function App() {
-  return (
-    <div className="min-h-screen bg-gray-900 text-white flex items-center justify-center">
-      <h1 className="text-3xl font-bold">TaskVault 🚀</h1>
-      <button className="bg-blue-500 hover:bg-blue-600 px-4 py-2 rounded">
-        Test Button
-      </button>
+import TaskForm from "./components/TaskForm";
+import TaskList from "./components/Tasklist";
 
-    </div>
+export default function App() {
+  return (
+    <main className="min-h-screen bg-gray-900 text-white p-8 max-w-xl mx-auto">
+      <h1 className="text-4xl font-bold mb-6">TaskVault 🚀</h1>
+      <TaskForm />
+      <TaskList />
+    </main>
   );
 }
-export default App;
